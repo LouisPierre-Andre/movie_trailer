@@ -1,0 +1,130 @@
+/* General styles */
+.navbar_container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem 5vw;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.Link:active {
+    text-decoration: none !important;
+    text-transform: none !important;
+
+  }
+
+
+
+
+/* Left part */
+.navbar_container .left_part {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* logo */
+.navbar_container .logo {
+    color: red;
+    text-decoration: none !important;
+    
+   
+}
+
+
+
+
+/* links */
+.navbar_container .link_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar_container .link_container p {
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+}
+
+/* search form */
+.form {
+    /* width: 100% !important; */
+    width: 30vw;
+}
+
+.form input {
+    width: 100%;
+}
+
+
+
+/* Right part */
+.navbar_container .right_part {
+    display: flex;
+    gap: 2rem;
+    min-width: 4rem;
+}
+
+.navbar_container .right_part i {
+    font-size: 1.4rem;
+}
+
+
+.navbar_container .right_part button {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+/* .submit-search {
+    border: 1px solid red;
+    padding: .3rem 1.5rem ;
+} */
+
+@media (max-width: 1000px) {
+    .link_container {
+        display: none !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .bi-bell-fill {
+        display: none !important;
+    }
+    .navbar_container.active .form {
+        width: 100%;
+    }
+
+    .middle_input_section {
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .form {
+        /* border: 2px solid orangered; */
+        width: 100% !important;
+    }
+
+    .search {
+        /* border: 2px solid green; */
+        width: 100% !important;
+    }
+
+
+
+    .navbar_container.active .logo_container {
+        display: none;
+    }
+
+
+
+    .navbar_container.active .right_part {
+        display: none;
+    }
+
+
+
+
+}
